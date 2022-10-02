@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- comments -->
+    <h3>heading from h1 to h6</h3>
+    <p>hello world</p>
+    <h1>hello world</h1>
+    <h3>hello world</h3>
+    <h6>hello world</h6>
+    <hr>
+
+    <!--horizontal rule line-->
+    
+    <h3>horizontal rule </h3>
+    <hr size="6">
+    <hr size="6" noshade>
+
+    <!-- Structure text:
+        use <em> instead of using <i> in order to make italic
+        use <strong> instead of using <b> in order to bold something
+    -->
+
+    <!-- headings -->
+
+    <h1>arpan tripathi</h1>
+    <br>
+    <p> <em> a rich happy guy having <strong>abroad residence</strong> </em> </p>
+    <p>i love to explore new places and also love to singing.</p>
+    <hr>
+
+    
+    
+    <!-- list : ordered and unordered list -->
+
+
+    <h3>list:ordered and unordered list also nesting list</h3>
+    <h3>hobbies</h3>
+     <ul>
+        <li>singing</li>
+            <!--nested unordered list-->
+            <ul>
+                <li>arijit songs</li>
+            </ul>
+        <li>dancing</li>
+     </ul>
+
+     <ol start="3">
+        <li>improvements</li>
+        <li>explore</li>
+        <li>travel</li>
+     </ol>
+
+     <hr>
+
+     <!--image : can be links/path/name-->
+
+
+     <h3>add image via link/path/name</h3>
+     
+     <!--using path-->
+     <img src="file:///C:/Users/tripa/OneDrive/Desktop/elon-musk-min-modified.png" alt="image of new york city" height = 200px width = 150px>
+     <p>this is elon musk</p>
+     <p>richest man of world</p>
+     <p><em>founder and ceo of <strong>starlink,tesla,solarcity,hyperloop.</strong></em></p>
+     <hr>
+     <h3>make table if want to show image and text as neighbour</h3>
+     <!--if i want to show image and text left and right in a row,then we have to make table-->
+     <table>
+        <tr>
+            <td>
+                <img src="images/elon-musk-min-modified.png"  alt="elon musk" height= 300px width=180px>
+            </td>
+            
+            <td>
+                <p>this is elon musk</p>
+                <p>richest man of world</p>
+                <p><em>founder and ceo of <strong>starlink,tesla,solarcity,hyperloop.</strong></em></p>
+            </td>
+        </tr>
+     </table>
+
+     <hr>
+
+     <!-- HTML links and anchor tag -->
+     
+     <h3>anchor tag with target attribute</h3>
+
+     <a href="page1.html">click here to go new page but not open in new window : target="_self" ( bydefault )</a>
+     <br>
+     <!-- use target attribute in anchor tag to open link
+
+     target = "_self"     (default)  : open in same page
+     target = "_blank"     usually a new tab, but users can configure browsers to open a new window instead.
+     target = "_parent"    the parent browsing context of the current one. If no parent, behaves as _self.
+     target = "_top"       he topmost browsing context (the "highest" context that's an ancestor of the current one).
+                           If no ancestors, behaves as _self.
+    
+    -->
+
+    <a href="page1.html" target="__blank">click here : target="_blank" </a><br>
+    <a href="page1.html" target="_parent">click here : target="_parent"</a><br>
+    <a href="page1.html" target ="_top">click here : target="_top"</a><br>
+    <hr>
+
+
+    <!--tables : it is suggested that use thead and tbody-->
+
+    <h3>tables: table,thead,tbody,tfoot,tr,th,td </h3>
+    <table border="3px">
+        <tr>
+            <td>2015-2017</td>
+            <td>12th completed</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td>graduation completed</td>
+        </tr>
+    </table>
+    <hr>
+
+<!--nesting of tables : nesting looks messy and complicated that's why we don't use html for styling -->
+
+    <h3>nesting of table</h3>
+    <h5>skills</h5>
+    <p>note:here only one row in parent table with two table data</p>
+    <p>i have created table inside both table data</p>
+
+    <table cellspacing="30">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>java</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>python</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>c,c++</td>
+                        <td>⭐⭐⭐⭐</td>
+                        
+                    </tr>
+                </table>
+            </td>
+            
+            <td>
+                <table>
+                    <tr>
+                        <td>web development</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>blockchain development</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>javascript</td>
+                        <td>⭐⭐⭐⭐</td>
+                        
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    
+<!--html forms-->
+     <h4>using file name in action attribute of form tag</h4>
+    <form class="" action="index.html" method="post">
+        <h3>my details:</h3>
+        <h5>using : label,input,and type attribute </h5>
+        <label>Name:</label>
+        <input type="text" name="" value=""><br><br>
+        <label>contact:</label>
+        <input type="number" name="" value=""><br><br>
+        <label>email:</label>
+        <input type="email" name="" value=""><br><br>
+        <label>password:</label>
+        <input type="password" name="" value=""><br><br>
+        <input type="submit">
+    </form>
+
+    <a href="input.html">input forms file</a>
+    <hr>
+    <h4>using mailto in action attribute of form tag</h4>
+    <form class="" action="mailto: arpan4919@gmail.com" method="post">
+        <h3>my details:</h3>
+        <h5>using : label,input,and type attribute </h5>
+        <label>Name:</label>
+        <input type="text" name="yourName" value=""><br><br>
+        <label>contact:</label>
+        <input type="number" name="yourContact" value=""><br><br>
+        <label>email:</label>
+        <input type="email" name="yourMail" value=""><br><br>
+        <label>password:</label>
+        <input type="password" name="yourPassword" value=""><br><br>
+        <input type="submit">
+    </form>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+</body>
+
+</html>
